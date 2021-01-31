@@ -1,0 +1,26 @@
+[package]
+name = "ctd"
+version = "0.1.0"
+edition = "2018"
+authors = ["PierreStephaneVoltaire <psvoltaire96@gmail.com>"]
+
+[[bin]]
+name="posts"
+path="src/posts/main.rs"
+[dependencies]
+tokio = { version = "0.2", features = ["macros"] }
+lambda = { git = "https://github.com/awslabs/aws-lambda-rust-runtime/", branch = "master"}
+serde_json = "1.0"
+uuid = "0.8.1"
+serde = { version = "1.0", features = ["derive"] }
+swagger = "4.0.2"
+futures = "0.3.5"
+log = "0.4.11"
+mine = "999999999.999999999.999999999"
+multipart = "0.17.0"
+serde_derive = "1.0.115"
+serde_ignored = "0.1.2"
+serde_urlencoded = "0.6.1"
+json = "0.12.4"
+diesel = { version = "1.4.4", features = ["postgres"] }
+dotenv = "0.15.0"
